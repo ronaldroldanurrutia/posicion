@@ -20,6 +20,15 @@ void crear(struct node *p,int m){
     vec->next=NULL;
     return ;
 }
+void concatenar(struct node *p,struct node *q){
+	struct node *s;
+	s=malloc(sizeof(struct node));
+	s=p->next;
+	for(;s!=NULL;){
+		s=s->next;
+	}
+	s=q;
+}
 void mostrar(struct node *p,int posicion){
     struct node *q;
     q=malloc(sizeof(struct node));
