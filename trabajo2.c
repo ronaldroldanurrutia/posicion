@@ -61,6 +61,7 @@ void quitar(struct node *p,char posicion){
 }
 void poner(struct node *p,int posicion,char w){
     struct node *q,*s,*r;
+    s=malloc(sizeof(struct node));
     q=p;
     r=q->next;
     int i;
@@ -74,7 +75,6 @@ void poner(struct node *p,int posicion,char w){
 }
 main(){
     struct node *head;
-    head=malloc(sizeof(struct node));
     crear(head);
     poner(head,2,'1');
     quitar(head,'w');
