@@ -35,7 +35,6 @@ void concatenar(struct node *p,struct node *q){
 }
 void mostrar(struct node *p){
     struct node *q;
-    q=malloc(sizeof(struct node));
     q=p;
     for(;q!=NULL;){
         printf("%c\n",q->n);
@@ -45,8 +44,6 @@ void mostrar(struct node *p){
 }
 void quitar(struct node *p,char posicion){
     struct node *q,*w;
-    q=malloc(sizeof(struct node));
-    w=malloc(sizeof(struct node));
     q=p;
     if(q->n==posicion){
         p=p->next;
@@ -65,8 +62,6 @@ void quitar(struct node *p,char posicion){
 }
 void poner(struct node *p,int posicion,char w){
     struct node *q,*s,*r;
-    s=malloc(sizeof(struct node));
-    r=malloc(sizeof(struct node));
     q=p;
     r=q->next;
     int i;
