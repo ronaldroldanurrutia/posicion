@@ -26,7 +26,6 @@ void crear(struct node *p){
 }
 void concatenar(struct node *p,struct node *q){
 	struct node *s;
-	s=malloc(sizeof(struct node));
 	s=p->next;
 	for(;s!=NULL;){
 		s=s->next;
