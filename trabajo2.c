@@ -14,7 +14,7 @@ void crear(struct node *p){
     vec=p;
     scanf("%c",&m);
     for(;m!='\n';){
-        while(m==' '){scanf("%c",&m);}
+        while(m==' ' || m=='\t'){scanf("%c",&m);}
         cur = malloc (sizeof (struct node));
         cur->n=m;
         vec->next=cur;
